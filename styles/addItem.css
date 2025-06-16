@@ -15,8 +15,18 @@
 
         & input{
             border-radius: .75rem;
-            border: 1px solid var(--border-primary);
+            border: 2px solid var(--border-primary);
             padding: 1rem;
+            transition: border-color 0.3s ease;
+            outline: none;
+
+            &:hover {
+                border-color: var(--border-hover);
+            }
+
+            &:focus{
+                border-color: var(--color-brand);
+            }
         }
 
         & button {
@@ -26,6 +36,12 @@
             border: none;
             font: var(--label);
             color: var(--always-white);
+            transition: background-color 0.5s ease;
+            cursor: pointer;
+            
+            &:hover {
+                background-color: var(--color-brand-hover);
+            }
         } 
     }
 }

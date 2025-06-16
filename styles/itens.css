@@ -22,25 +22,40 @@
                 height: 1rem;
                 border-radius: .3rem;
                 border: 1px solid var(--border-primary);
+                cursor: pointer;
+
+                &:hover {
+                border-color: var(--border-hover);
+                }
+
+                &:checked{
+                    background-color: var(--color-brand);
+                    background-image: url('../assets/check.svg');
+                    background-position: center;
+                    background-size: cover;
+                    border: none;
+                }
             }
 
             & img {
                 margin-left: auto;
+                cursor: pointer;
             }
         }
     }
 }
 
 .alert {
-    display: flex;
+    display: none;
     gap: .5rem;
     background-color: var(--color-danger);
     padding: .75rem;
     color: var(--always-white);
     margin-top: 2.25rem;
     border-radius: .75rem;
-
+    
     & img:last-child{
         margin-left: auto;
     }
+
 }
