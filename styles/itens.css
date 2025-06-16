@@ -1,0 +1,46 @@
+.itens{
+    
+    
+    & ul {
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+
+        & li {
+            background-color: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            color: var(--content-secondary);
+            font: var(--paragraph);
+            padding: .75rem;
+            border-radius: .75rem;
+
+            & input[type="checkbox"]{
+                appearance: none;
+                width: 1rem;
+                height: 1rem;
+                border-radius: .3rem;
+                border: 1px solid var(--border-primary);
+            }
+
+            & img {
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+.alert {
+    display: flex;
+    gap: .5rem;
+    background-color: var(--color-danger);
+    padding: .75rem;
+    color: var(--always-white);
+    margin-top: 2.25rem;
+    border-radius: .75rem;
+
+    & img:last-child{
+        margin-left: auto;
+    }
+}
