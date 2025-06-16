@@ -46,16 +46,27 @@
 }
 
 .alert {
-    display: none;
+    display: flex;
     gap: .5rem;
     background-color: var(--color-danger);
     padding: .75rem;
     color: var(--always-white);
     margin-top: 2.25rem;
     border-radius: .75rem;
+    transition: opacity 1s ease;
     
     & img:last-child{
         margin-left: auto;
+        cursor: pointer;
+    }
+
+    &.mostrar {
+        opacity: 1;
+    }
+
+    &.esconder{
+        opacity: 0;
+        
     }
 
 }

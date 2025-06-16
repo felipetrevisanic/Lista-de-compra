@@ -20,22 +20,18 @@
             <span class="link">&larr;Voltar</span>
             <h1>Compras da semana</h1>
             <div>
-                <input type="text" placeholder="Adicione um novo item">
-                <button>Adicionar item</button>
+                <input type="text" placeholder="Adicione um novo item" id="addItem">
+                <button id="btnAdd">Adicionar item</button>
             </div>
         </section>
         <section class="itens">
-            <ul>
-                <li>
-                    <input type="checkbox">
-                    <p>Pão de forma</p>
-                    <img src="assets/trash.svg" alt="icone de lixo">
-                </li>
+            <ul class="list">
+                
             </ul>
-            <div class="alert">
+            <div class="alert esconder">
                 <img src="assets/warning-circle.svg" alt="circulo de aviso">
                 <p>O item foi removido da lista</p>
-                <img src="assets/delete-small.svg" alt="">
+                <img src="assets/delete-small.svg" alt="" id="cancel">
             </div>
         </section>
     </main>
